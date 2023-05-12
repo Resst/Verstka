@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Rockets | Contacts</title>
+<meta charset="utf-8">
+<link type="text/css" rel="stylesheet" href="styles/style.css" />
+</head>
+<body class="page">
+<div id="wrap">
+  <div id="header"> <img src="img/logo.png" />
+    <div id="nav">
+      <ul class="menu">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="case.html">Case</a></li>
+        <li><a href="problem.html">Problem</a></li>
+        <li class="current_page_item"><a href="contact.html">Contact</a></li>
+      </ul>
+    </div>
+    <!--end nav-->
+  </div>
+  <!--end header-->
+  <div class="page-headline">Просто напишите нам!</div>
+  <div id="main">
+    <div id="contact-details">
+      <h3 class="title">Get In Touch</h3>
+      <div class="post">
+        <p>Please use the form on this page to discuss the possibility of working with us or contact us directly via phone or email.</p>
+      </div>
+      <h3>Contact Details</h3>
+      <h4>Phone: <span>+7 (XXX) XXX XX XX</span></h4>
+      <h4>Fax: <span>+7 (XXX) XXX XX XX</span></h4>
+      <h4>Email: <span>roket@science.not</span></h4>
+    </div>
+    <!--end contact-details-->
+    <div id="contact-form-container">
+      <form id="contact-form" method="post" action="#">
+        <fieldset>
+          <input id="form_name" type="text" name="name" value="Name" onFocus="if(this.value=='Name'){this.value=''};" onBlur="if(this.value==''){this.value='Name'};" />
+          <input id="form_email" type="text" name="email" value="Email" onFocus="if(this.value=='Email'){this.value=''};" onBlur="if(this.value==''){this.value='Email'};" />
+          <input id="form_subject" type="text" name="subject" value="Subject" onFocus="if(this.value=='Subject'){this.value=''};" onBlur="if(this.value==''){this.value='Subject'};" />
+          <textarea id="form_message" rows="10" cols="40" name="message"></textarea>
+          <input id="form_submit" class="submit" type="submit" name="submit" value="Submit &raquo;" />
+          <div class="hide">
+            <label>Do not fill out this field</label>
+            <input name="spam_check" type="text" value="" />
+          </div>
+        </fieldset>
+      </form>
+    </div>
+    <!--end contact-form-container-->
+  </div>
+  <!--end main-->
+  </div>
+  </body>
+</html>
