@@ -139,6 +139,7 @@ function check(){
     let maxY = plantElements[0].getBoundingClientRect().y;
 
     let rotFailed = false;
+    let onRoad = false;
 
     plantElements.forEach(element => {
         if(!checkRotation(element)){
@@ -146,6 +147,11 @@ function check(){
             return false;
         }
         rect = element.getBoundingClientRect();
+        if(rect.x > 500){
+            onRoad = true;
+            return false;
+    }
+
         if(rect.x < minX)
             minX = rect.x;
         if(rect.x > maxX)
@@ -156,7 +162,7 @@ function check(){
             maxY = rect.y;
     });
 
-    if(maxX - minX > sizeX || maxY - minY > sizeY || rotFailed)
+    if(maxX - minX > sizeX || maxY - minY > sizeY || rotFailed || onRoad)
         return false;
     
     let plantMinX = minX;

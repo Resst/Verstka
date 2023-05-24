@@ -1,0 +1,46 @@
+#shuffle_btn{
+  margin-top: 20px;
+  margin-left: 20px;
+  font-size: 32px;
+}
+#win_text{
+  position: absolute;
+
+  color:yellow;
+
+  font-weight: bold;
+
+  display: none;
+
+  animation: win-anim 3s forwards 0s infinite;
+}
+  
+@keyframes win-anim{
+  0% {font-size: 32px; left: 540px; top: 420px;}
+  50%{font-size: 72px; left: 508px; top: 360px;}
+  100% {font-size: 32px; left: 540px; top: 420px;}
+}
+
+#puzzle-area{
+  width: 1000px;
+  height: 700px;
+  margin-top: 20px;
+  margin-left: 20px;
+  position: relative;
+
+  background-image: url("../img/field.jpg");
+  background-size: 100% 100%; 
+}
+
+.piece{
+  width: 150px; 
+  height: 150px; 
+
+  position: absolute; 
+
+  background-size: contain; 
+}
+
+.piece--hidden{
+  display: none;
+}

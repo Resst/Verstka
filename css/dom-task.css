@@ -1,0 +1,25 @@
+.class1{
+    list-style-position: inside;
+    background-color: #e0b3ff;
+    margin: 0;
+}
+.class2{
+    list-style-position: inside;
+    background-color: #ffc966;
+    margin: 0;
+}
+ul>li.class1{
+    list-style-type: disc;
+}
+ul>li.class2{
+    list-style-type: disc;
+}
+
+.bold_list{
+    font-weight: bold;
+}
+
+aside{
+    width: 20%;
+    float: left;
+}
