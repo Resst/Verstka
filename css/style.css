@@ -1326,7 +1326,7 @@ h3 {
 
 /* line 1, ../../Arafath/CL/january 2020/240. Animal/HTML/scss/_slider.scss */
 .slider_bg_1 {
-  background-image: url(../img/banner.png);
+  background-image: url(../img/banner/banner.png);
 }
 
 /* line 4, ../../Arafath/CL/january 2020/240. Animal/HTML/scss/_slider.scss */
@@ -2965,7 +2965,7 @@ h3 {
 
 /* line 1, ../../Arafath/CL/january 2020/240. Animal/HTML/scss/_bradcam.scss */
 .breadcam_bg {
-  background-image: url(../img/bradcam.png);
+  background-image: url(../img/banner/bradcam.png);
 }
 
 /* line 4, ../../Arafath/CL/january 2020/240. Animal/HTML/scss/_bradcam.scss */
@@ -3347,7 +3347,7 @@ h3 {
 
 /* line 1, ../../Arafath/CL/january 2020/240. Animal/HTML/scss/_anipat.scss */
 .anipat_bg_1 {
-  background-image: url(../img/contact_bg.png);
+  background-image: url(../img/banner/contact_bg.png);
 }
 
 /* line 5, ../../Arafath/CL/january 2020/240. Animal/HTML/scss/_anipat.scss */

@@ -1,0 +1,233 @@
+#game-zone{
+    position: relative;
+    width: 1400px;
+    height: 800px;
+    background-size: 100% 100%;
+    overflow: hidden;
+    border:  solid;
+    margin: auto;
+}
+
+.reg-block{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.pf-win{
+    position: relative;
+    width: 1400px;
+    height: 800px;
+    background-size: 100% 100%;
+    overflow: hidden;
+    background-image: url("../img/pf-win.jpg");
+    margin: auto;
+    border:  solid;
+}
+.your-score-table{
+    padding: 10px;
+    background-color: rgba(62, 53, 182, 0.7);
+    position: absolute;
+}
+.your-score-table p{
+    color: black;
+    font-size: 40px;
+    line-height: 45px;
+}
+
+.score-table{
+    margin:auto;
+    padding: 10px;
+    width: 40%;
+    height: 100%;
+    background-color: rgba(62, 53, 182, 0.7);
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.score-table p{
+    font-size: 40px;
+    line-height: 45px;
+    text-align: center;
+    color: wheat;
+}
+
+.inter-game-zone{
+    background-color: gray;
+}
+.inter p{
+    color: black;
+    line-height: 40px;
+}
+
+.pf-game-zone{
+    background-image: url("../img/pool.png");
+}
+
+.river1{
+    background-image: url("../img/river1.png");
+}
+.river2{
+    background-image: url("../img/river2.png");
+}
+.river3{
+    background-image: url("../img/river3.png");
+}
+
+.click-game-zone{
+    background-color: black;
+}
+
+.inter{
+    display: flex;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+}
+.inter p{
+    font-size: 40px;
+    font-weight: bold;
+    text-align: center;
+}
+.inter span{
+    color: rgb(28, 54, 170);
+}
+.inter div{
+    width: 100px;
+    height: 100px;
+    background-image: url("../img/next-btn.png");
+    background-size: 100% 100%;
+}
+
+#scores{
+    position: absolute;
+}
+.score-text{
+    position: relative;
+    display: block;
+    width: fit-content;
+    margin: 0;
+    font-size: 40px;
+    font-weight: bold;
+    background-color: lightgray;
+    color: black;
+}
+.help-text{
+    position: relative;
+    display: block;
+    margin: 0;
+    font-size: 40px;
+    line-height: 40px;
+    font-weight: bold;
+    background-color:cyan;
+    color: black;
+}
+.error-text{
+    position: relative;
+    display: block;
+    width: fit-content;
+    margin: 0;
+    font-size: 40px;
+    font-weight: bold;
+    background-color: lightgray;
+    color: red;
+}
+
+.pufferfish{
+    position: absolute;
+    background-image: url("../img/pufferfish.png");
+    width: 150px;
+    height: 150px;
+    background-size: 100% 100%;
+}
+
+#pufferfish1, #pufferfish2, #pufferfish3{
+    top: 60%;
+}
+
+#pufferfish1{
+    left: 15%;
+}
+#pufferfish2{
+    left: 45%;
+}
+#pufferfish3{
+    left: 75%;
+}
+
+.jumping{
+    animation: pf-jump-anim 3s linear;
+}
+
+.carrot{
+    background-image: url("../img/carrot.png");
+    z-index: 2;
+}
+.wrong1{
+    background-image: url("../img/wrong1.png");
+}
+.wrong2{
+    background-image: url("../img/wrong2.png");
+}
+.wrong3{
+    background-image: url("../img/wrong3.png");
+}
+
+.clickable-game{
+    width:100px;
+    height: 100px;
+    background-size: 100% 100%;
+    z-index: 1;
+    position: absolute;
+}
+
+@keyframes pf-jump-anim{
+    0%{transform: translate(0, 0) rotate(-30deg) ;}
+    20%{transform: translate(-100px, 100px) rotate(90deg);}
+    50%{transform: translate(-100px, -400px) rotate(0deg);}
+    80%{transform: translate(0, 0) rotate(-30deg) ;}
+}
+
+@keyframes pf-swim-river1 {
+    0%{transform: translate(1400px, 300px) scale(0.3, 0.3);}
+    20%{transform: translate(1000px, 250px) scale(0.3, 0.3);}
+    35%{transform: translate(750px, 270px) scale(0.3, 0.3);}
+    100%{transform: translate(-100%, 600px) scale(0.6, 0.6);}
+}
+
+@keyframes pf-swim-river2 {
+    0%{transform: translate(1100px, 800px) scale(0.3, 0.3);}
+    10%{transform: translate(900px, 400px) scale(0.25, 0.25);}
+    15%{transform: translate(800px, 350px) scale(0.2, 0.2);}
+    20%{transform: translate(700px, 250px) scale(0.15, 0.15);}
+    28%{transform: translate(600px, 220px) scale(0.15, 0.15);}
+    38%{transform: translate(500px, 120px) scale(0.1, 0.1);}
+    47%{transform: translate(280px, 100px) scale(0.1, 0.1);}
+    49%{transform: translate(250px, 80px) scale(0.1, 0.1);}
+    53%{transform: translate(150px, 100px) scale(0.1, 0.1);}
+    63%{transform: translate(130px, 300px) scale(0.1, 0.1);}
+    80%{transform: translate(350px, 450px) scale(0.2, 0.2);}
+    87%{transform: translate(250px, 700px) scale(0.3, 0.3);}
+    95%{transform: translate(650px, 600px) scale(0.3, 0.3);}
+
+    100%{transform: translate(700px, 800px) scale(0.3, 0.3);}
+}
+
+@keyframes pf-swim-river3 {
+    0%{transform: translate(160px, 200px) scale(0, 0);}
+    10%{transform: translate(180px, 200px) scale(0.2, 0.2);}
+    30%{transform: translate(300px, 350px) scale(0.4, 0.4);}
+    35%{transform: translate(350px, 450px) scale(0.4, 0.4);}
+    60%{transform: translate(790px, 450px) scale(0.5, 0.5);}
+    70%{transform: translate(810px, 450px) scale(0, 0);}
+    75%{transform: translate(830px, 450px) scale(0, 0);}
+    76%{transform: translate(830px, 450px) scale(0.2, 0.2);}
+    86%{transform: translate(900px, 350px) scale(0.2, 0.2);}
+    100%{transform: translate(850px, 300px) scale(0, 0);}
+
+}
